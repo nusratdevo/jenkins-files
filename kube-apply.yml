@@ -1,0 +1,20 @@
+skubectl get all
+kubectl get nodes
+kubectl get nodes -o wide
+kubectl get pods
+kubectl get pods -n kube-system
+kubectl get pod -A -o wide
+********
+kubectl  describe pod 
+kubectl  describe pod <pod name> -n <namespace-name>
+*******
+kubectl create namespace webapps
+kubectl apply -f deployment.yml
+kubectl apply -f service.yml
+Kubectl apply-f sec-file.yaml -n webapps
+kubectl describe secret mysecretname -n webapps (to create secret under namespace)
+*****
+kubectl scale deployment deployment.yml —replicas=2
+cat .kube/config --- server-endpoint
+***********
+app-password: awss mfme fkky uqqs 
