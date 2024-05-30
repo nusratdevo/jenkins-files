@@ -17,4 +17,3 @@ kubectl describe secret mysecretname -n webapps (to create secret under namespac
 kubectl scale deployment deployment.yml —replicas=2
 cat .kube/config --- server-endpoint
 ***********
-app-password: awss mfme fkky uqqs 
