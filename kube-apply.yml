@@ -11,7 +11,10 @@ kubectl  describe pod <pod name> -n <namespace-name>
 kubectl create namespace webapps
 kubectl apply -f deployment.yml
 kubectl apply -f service.yml
-Kubectl apply-f sec-file.yaml -n webapps
+Kubectl apply-f sec.yaml
+kubectl apply -f svc.yml
+kubectl apply -f role.yml
+kubectl apply -f role-bind.yml
 kubectl describe secret mysecretname -n webapps (to create secret under namespace)
 *****
 kubectl scale deployment deployment.yml —replicas=2
